@@ -1,0 +1,98 @@
+
+.head{
+   
+    background-color: black;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.error{
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.search input {
+
+    padding: 10px 35px;
+    border-radius: 15px;
+}
+
+.search button {
+
+    padding: 10px 35px;
+    border-radius: 15px;
+}
+
+body{
+
+    background-color: white;
+}
+
+.wez{
+    background-color: white;
+}
+
+.text h1{
+    font-size: 55px ;
+    color: white;
+}
+.text p{
+font-size: 15px;
+color: white;
+}
+
+h1{
+      
+    font-family: 'Inter', sans-serif;
+  
+}
+p{   
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.text{
+    
+    padding-top: 15px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: grid;
+    justify-items: center;
+    
+}
+.info{
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wiki{
+    width: 100%;
+    margin: 0%;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    background-color: black;
+
+}
+
+.wiki p{
+    color: white;
+    
+}
+.wiki h2{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}

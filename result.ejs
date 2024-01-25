@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+
+    <div class="head">
+        <div class="text">
+           <h1>WEATHER INFO</h1>
+           <p>UTESHKALIEV ALIASKAR SE-2201</p></div>
+          
+           <div class="search">
+           <form class="d1" action = "/" method="post">         
+           <input type="text" name="ccity" placeholder="City">
+           <button type="submit">GO</button></form> </div> </div>
+ 
+    <% if (locals.message) { %>
+        <h1 class="error"><%= message %></h1>
+       
+    <% } else{ %>  
+        
+        <div class="info">
+        <div class="wez">
+    <p>Temperature is: <%= data.temp %> C</p>
+    <p>The weather is currently <%= data.description %></p>
+    <img src="<%= data.imageURL %> ">
+    <p>Coordinates of City is: <%= data.coordin1 %>  <%= data.coordin2 %> </p>
+    <p>Temperture Feels Like: <%= data.flslike %> C</p>
+    <p>Humidity is: <%= data.humidity %> </p>
+    <p>Pressure is: <%= data.pressure %> WC</p>
+    <p>Wind Speed is: <%= data.windspeed %> M/S</p>
+    <p>Country Code: <%= data.councode %></p>
+    <p>Rain Volume: <%= data.rain %></p>
+      </div>
+      <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDiIIhCaqovxoNY9uc17ge8Q_2ns7LAiNM&q=<%= data.city %>" allowfullscreen></iframe>
+    
+    </div>
+    <div class="wiki">
+        <h2>ABOUT CITY</h2>
+    <p> <%- data.wikiExtract %></p></div>
+   
+    <% } %>
+</div>
+</body>
+</html>
